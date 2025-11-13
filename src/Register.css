@@ -1,3 +1,42 @@
-h1{
-    color: blueviolet;
+h1 {
+  color: blueviolet;
+}
+#main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(245, 5, 245), rgb(147, 3, 199));
+  padding-top: 70px;
+}
+#main > form {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  background-color: beige;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 25%;
+  border-radius: 10px;
+}
+#main > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#main > form input {
+  height: 25px;
+}
+#main > form h1 {
+  height: 30px;
+}
+#btn > input {
+  width: 100%;
+  margin: auto;
+  background-color: blue;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  height: 30px;
 }

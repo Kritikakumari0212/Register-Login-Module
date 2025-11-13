@@ -13,7 +13,10 @@ const server = http.createServer((req, res) => {
       // let data=fs.readFileSync("./src/Register.html")
       // res.end(data)
       renderHtml("./src/Register.html", res);
-    } else if (req.url.endsWith(".css")) {
+    } else if(req.url=="/login") {
+        renderHtml("./src/Login.html", res);
+    }
+    else if (req.url.endsWith(".css")) {
       let fileName = req.url.slice(1);
       renderHtml(`./src/${fileName}`, res);
     }
